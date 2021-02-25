@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+body {
+    background-image: url('../../images/light-grey-backgrounds/1109072.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: .1em;
+}
+
+
+
+header [alt=logo] {
+    width: 70px;
+    position: absolute;
+}
+
+
+hr.separator {
+    border: none;
+    opacity: 0.2;
+    max-width: 1320px;
+    margin-top: 60px;
+    margin-bottom: 110px;
+}

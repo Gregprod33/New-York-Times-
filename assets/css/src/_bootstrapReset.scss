@@ -1,0 +1,49 @@
+/*margin*/
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6
+) !default;
+
+
+
+/*colors*/
+
+$primary: #212122;
+$secondary: #01B2EC;
+$info: #cacaca;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    
+);
+
+
+
+
+/* links */
+
+.nav-link.active {
+  color: $secondary;
+}
+
+.nav-link {
+    color: $info;
+    &:hover,
+    &:focus {
+      color: $secondary;
+    }
+   
+  }
+
+
+@import "../../lib/bootstrap_5/scss/bootstrap.scss";
