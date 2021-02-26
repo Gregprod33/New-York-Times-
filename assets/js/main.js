@@ -7,14 +7,15 @@ fetch("https://api.nytimes.com/svc/news/v3/content/nyt/all.json?api-key=UsgAbfRs
 .then(response => response.json()) 
 .then(data => {
 
-  const articles = data.results;
+  let articles = data.results;
+ 
   for(let i = 0; i < 100; i++) {
-           
-    var squelette = document.createElement("div");
-    squelette.classList.add("col-3", "d-flex", "justify-content-center", "align-self-start" )
-    const date = articles[i].updated_date;
     
-    const newDate = date.replace(/T\d+[:]\d+[:]\d+[-]/, ' ');
+    var squelette = document.createElement("div");
+    squelette.classList.add("col-md-6", "col-lg-4", "col-xl-3", "d-flex", "justify-content-center", "align-self-start" )
+    let date = articles[i].updated_date;
+    
+    let newDate = date.replace(/T\d+[:]\d+[:]\d+[-]/, ' ');
 
     if (articles[i].multimedia != null) {
 
@@ -35,16 +36,9 @@ fetch("https://api.nytimes.com/svc/news/v3/content/nyt/all.json?api-key=UsgAbfRs
     returnApi.append(squelette);
 
     }
-  
-
-
    } 
-
-
   })
-  
  }
-
 
 getApi();
 

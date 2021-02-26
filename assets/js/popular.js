@@ -11,7 +11,7 @@ const getApi = () => {
       for(let i = 0; i < articles.length; i++) {
                
         var squelette = document.createElement("div");
-        squelette.classList.add("col-3", "d-flex", "justify-content-center", "align-self-start" )
+        squelette.classList.add("col-md-6", "col-lg-4", "col-xl-3", "d-flex", "justify-content-center", "align-self-start" )
         
         if (articles[i].media[0]["media-metadata"] != null) {
 
